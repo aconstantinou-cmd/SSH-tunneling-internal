@@ -11,8 +11,6 @@ ip tuntap add mode tap tap0
 ifconfig tap0 10.100.100.100 netmask 255.255.255.0 up
 service sshd reload
 
-
-read ip
 ssh -o Tunnel=ethernet -f -w 0:0 root@$1 true
 
 echo "Please provide IP or CIDR target: "
