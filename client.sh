@@ -1,4 +1,6 @@
 #/bin/bash
+#make sure you have openssh server installed, you can do so by running apt install openssh-server
+
 if [[ $# -eq 0 ]] ; then
 	echo "This client script allows a tap tunneling interface to be created for vulnerability scanning internal networks using SSH tunneling"
     echo ""
